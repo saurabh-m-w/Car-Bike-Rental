@@ -1,5 +1,6 @@
 import 'package:car_bike_rental/constants/constant.dart';
 import 'package:car_bike_rental/widgets/cars_grid.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CarsOverviewScreen extends StatelessWidget {
@@ -10,14 +11,59 @@ class CarsOverviewScreen extends StatelessWidget {
       backgroundColor: Theme.of(context).primaryColor,
       bottomNavigationBar: BottomAppBar(
         color: Colors.blueAccent,
-        child: Container(height: 50,
+        child: Container(height: 60,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                FlatButton.icon(onPressed: null, icon: Icon(Icons.directions_car,color: Colors.black,), label: Text('Rent',style: TextStyle(color: Colors.black),)),
-                FlatButton.icon(onPressed: null, icon: Icon(Icons.search,color: Colors.black,), label: Text('Search',style: TextStyle(color: Colors.black),)),
-                FlatButton.icon(onPressed: null, icon: Icon(Icons.file_upload,color: Colors.black), label: Text('Share',style: TextStyle(color: Colors.black),)),
-                FlatButton.icon(onPressed: null, icon: Icon(Icons.person,color: Colors.black), label: Text('Profile',style: TextStyle(color: Colors.black),)),
+                RaisedButton(
+                  elevation: 0,
+                  onPressed: (){},
+                  color: Colors.blueAccent,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.search),
+                      Text('Search')
+                    ],
+                  ),
+                ),
+                RaisedButton(
+                  elevation: 0,
+                  onPressed: (){},
+                  color: Colors.blueAccent,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.directions_car),
+                      Text('Share')
+                    ],
+                  ),
+                ),
+                RaisedButton(
+                  elevation: 0,
+                  onPressed: (){},
+                  color: Colors.blueAccent,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.message),
+                      Text('Messages')
+                    ],
+                  ),
+                ),
+                RaisedButton(
+
+                  onPressed: (){},
+                  color: Colors.blueAccent,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.account_circle),
+                      Text('Profile')
+                    ],
+                  ),
+                ),
+
               ],
             ),
         ),
