@@ -25,7 +25,15 @@ dependencies:
     sdk: flutter
 
   date_time_picker: ^1.0.0
-
+  date_range_picker: ^1.0.3
+  image_picker: ^0.6.7+4
+  firebase_auth: ^0.16.1
+  cloud_firestore: ^0.13.7
+  provider: ^3.1.0
+  flutter_spinkit: ^4.1.2+1
+  firebase_storage: ^3.1.6
+  shimmer: ^1.1.1
+  flutter_speed_dial: ^1.2.5
 
 
   # The following adds the Cupertino Icons font to your application.
